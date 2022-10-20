@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Repos</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container" id="main">
+      <h1>GitHub repos</h1>
+      <form id="repos-form">
+        <label for="github-username">GitHub username</label>
+        <input id="github-username" type="text" placeholder="GitHub username" />
+        <button type="submit" id="get-repos" class="btn btn-default">
+          Get repos
+        </button>
+      </form>
+      <ul id="repos-list"></ul>
+    </div>
+
+    <script src="./script/index.js" type="module"></script>
+    <script src="./script/fetch-wrapper.js" type="module"></script>
+    <script src="./script/helpers.js" type="module"></script>
+  </body>
+</html>
